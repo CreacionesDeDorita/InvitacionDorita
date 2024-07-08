@@ -1,0 +1,138 @@
+/* Importa las fuentes */
+@font-face {
+  font-family: 'Great Vibes';
+  src: url('GreatVibes-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('BodoniFLF-Italic.ttf') format('truetype');
+}
+
+/* Aplica la fuente Montserrat a todo el documento por defecto */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom right, #db9ca6, #af0a5d); /* Degradado desde la esquina superior derecha a la esquina inferior derecha */
+  padding: 20px;
+  margin: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 140vh;
+  box-sizing: border-box;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #ccc;
+}
+
+.container {
+  background-color: #ffffff9f;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  max-height: 140vh;
+  overflow-y: 140VH;
+  scrollbar-width: hidden;
+}
+
+h1 {
+  color: #160202;
+}
+
+/* Aplica la fuente Great Vibes a los encabezados específicos */
+h1.great-vibes {
+  font-family: 'Great Vibes', cursive;
+  font-size: 2.5em; /* Ajusta el tamaño de la fuente si es necesario */
+}
+
+p {
+  color: #000000;
+}
+
+.details {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.details p {
+  margin: 10px 0;
+}
+
+button {
+  background-color: #e70fb8;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #5e0756;
+}
+
+.section {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+
+iframe {
+  pointer-events: none;
+}
+
+.image-container {
+  width: 100%;
+  height: 300px;
+  background-color: #dddddd00;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.image-container img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.container::-webkit-scrollbar {
+  width: 12px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: #ccc;
+  border-radius: 10px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 10px;
+  border: 3px solid #ccc;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Estilo para el botón de confirmar asistencia */
+.center-button {
+  display: block;
+  margin: 20px auto;
+}
